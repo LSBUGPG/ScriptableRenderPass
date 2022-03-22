@@ -10,10 +10,8 @@ public class CustomPass : ScriptableRenderPass
 
     public CustomPass(CustomFeature.FeatureSettings settings)
     {
-        Debug.Log("new CustomPass()");
         if (material == null)
         {
-            Debug.Log($"Creating new material");
             material = CoreUtils.CreateEngineMaterial("Hidden/Invert");
         }
         material.SetFloat("_Invert", settings.invert? 1.0f : 0.0f);
