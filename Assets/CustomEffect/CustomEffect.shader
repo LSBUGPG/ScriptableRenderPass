@@ -2,7 +2,7 @@ Shader "Hidden/Invert"
 {
     Properties
     {
-        _MainTex("Texture", 2D) = "white"
+        _MainTex("_MainTex", 2D) = "white"
     }
 
         SubShader
